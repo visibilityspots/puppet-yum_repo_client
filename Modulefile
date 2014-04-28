@@ -1,0 +1,8 @@
+name    	'puppet-yum_repo_client'
+version 	'1.0.0'
+source 		'Github'
+author 		'Jan Collijs'
+license 	'GPL'
+summary 	'This module manages an yum-repo-client service'
+description 	'Using this module the yum-repo-client service will be maintained'
+project_page 	'https://github.ugent.be/Universiteitsbibliotheek/pm_yum_repo_client'
