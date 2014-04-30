@@ -15,9 +15,9 @@ Tested on a CentOS 6.5 machine using puppet 3.5.1 and ruby 1.8.7
 ## Options
 
 ```puppet
-   $pkg_name 	= defaults to 'yum-repo-client',
-   $host 	= defaults to 'localhost',
-   $port	= defaults to '8080',
+   $pkg_name    = defaults to 'yum-repo-client',
+   $host        = defaults to 'localhost',
+   $port        = defaults to '8080',
 ```
 
 ## Example
@@ -37,8 +37,8 @@ For an implementation with custom values without hiera support:
     class {
       'yum_repo_client':
         pkg_name => 'yum-repo-client',
-	host     => 'localhost',
-	port     => '8080'
+        host     => 'localhost',
+        port     => '8080'
     }
   }
 ```
