@@ -4,7 +4,7 @@ A puppet-module which configures the [yum-repo-client](https://github.com/Immobi
 
 The [generated](https://github.com/ImmobilienScout24/yum-repo-client#build-rpm) rpm package needs to be uploaded to an available repository so the puppet module can install it.
 
-You could use for example my [package.io](https://packagecloud.io/visibilityspots/packages) repository which you can install on CentOS by:
+You could use for example my [packagecloud.io](https://packagecloud.io/visibilityspots/packages) repository which you can install on CentOS by:
 
 ```bash
 $ curl https://packagecloud.io/install/repositories/visibilityspots/packages/script.rpm | sudo bash
