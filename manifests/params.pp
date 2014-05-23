@@ -6,4 +6,5 @@ class yum_repo_client::params {
   $pkg_name     = 'yum-repo-client'
   $host         = 'localhost'
   $port         = '8000'
+  $context      = undef
 }

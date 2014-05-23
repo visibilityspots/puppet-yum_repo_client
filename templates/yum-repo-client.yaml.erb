@@ -2,3 +2,4 @@
 #
 DEFAULT_HOST : <%= scope.lookupvar('yum_repo_client::host') %>
 DEFAULT_PORT : <%= scope.lookupvar('yum_repo_client::port') %>
+<% if @context %>DEFAULT_CONTEXT : <%= scope.lookupvar('yum_repo_client::context') %><% end %>

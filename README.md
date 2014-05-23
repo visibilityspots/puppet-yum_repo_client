@@ -18,7 +18,10 @@ Tested on a CentOS 6.5 machine using puppet 3.5.1 and ruby 1.8.7
    $pkg_name    = defaults to 'yum-repo-client',
    $host        = defaults to 'localhost',
    $port        = defaults to '8080',
+   $context     = defaults unset,
 ```
+
+Most options are self explaining, the name of the package to install, the host and port where the yum-repo-server runs on and last but not least the context the app is deployed as in your jetty or tomcat server. By default yum-repo-server will be deployed as ROOT/ therefore you don't have to provide this option. Only if you for example deploy the app as yum-repo-server in your webapps directory you should declare the context.
 
 ## Example
 
@@ -38,7 +41,8 @@ For an implementation with custom values without hiera support:
       'yum_repo_client':
         pkg_name => 'yum-repo-client',
         host     => 'localhost',
-        port     => '8080'
+        port     => '8080',
+        context  => 'yum-repo-server'
     }
   }
 ```
