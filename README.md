@@ -1,4 +1,4 @@
-# puppet-yum-repo-client module
+# puppet-yum-repo-client module [![Build Status](https://travis-ci.org/visibilityspots/puppet-yum_repo_client.svg?branch=master)](https://travis-ci.org/visibilityspots/puppet-yum_repo_client)
 
 A puppet-module which configures the [yum-repo-client](https://github.com/ImmobilienScout24/yum-repo-client)
 
